@@ -13,13 +13,19 @@ BankSight Analytics is a mid-sized financial institution committed to leveraging
 ## Business Problem
 The main challenge is a 15–20% yearly churn among Jade-tier customers, who hold 44% of total deposits but cause major balance fluctuations. In 2025, U.S. banks are facing intense competition from digital-first players like Chime and Ally, driving over $50B in deposit shifts each year. The dataset reflects this trend Jade customers maintain higher deposits (~$697K, 5% above Silver/Gold) but have shorter tenures (7–10 years), showing strong acquisition but weak retention. This churn translates to $2K–$3K in lost annual revenue per customer, or about $12M across 500 clients. While risk remains steady (avg. 2.26), 30% of lending capacity stays unused, and with deposits declining 1.1% in early 2025, banks could face a 5–8% portfolio shrinkage by 2026 if retention strategies aren’t strengthened.
 
+## Methodology Used
+- **Data Ingestion:** MySQL, Python
+- **EDA & Cleaning:** pandas, numpy, seaborn, matplotlib
+- **Visualization:** Power BI (DAX, slicers, conditional formatting)
+- **Statistical Analysis:** Correlation, groupby, tenure calculation
+- **Segmentation:** Loyalty tier, fee structure, nationality
+
 ## Detailed Insights from Data Exploration
 
 1. **Loyalty and Deposit Dynamics**
    - Jade tier clients joined most recently (average 8.5 years ago) but control the largest share of deposits.
    - Platinum clients, despite 14+ years of tenure, average $85K less in deposits.
    - This suggests acquisition channels are highly effective, but onboarding and progression pathways are broken.
-   - **Actionable Implication:** A one-time upgrade nudge could convert transient wealth into lifelong relationships.
 
 ![Loyalty and Deposit Dynamics](https://github.com/Vidhisahay/BankSight-EDA-Analytics-Dashboard/blob/main/Pictures/Loyalty%20%26%20Deposit%20Dynamics.png)
 
@@ -27,7 +33,6 @@ The main challenge is a 15–20% yearly churn among Jade-tier customers, who hol
    - $684K average deposits (vs. $650K for Mid-fee)
    - Higher business lending ($863K avg.)
    - Lower risk weighting (2.24 avg.)
-   - **This validates that** fee tolerance signals trust and intent to deepen the relationship a leading indicator for cross-sell success.
 
 ![Fee Structure and Financial Engagement](https://github.com/Vidhisahay/BankSight-EDA-Analytics-Dashboard/blob/main/Pictures/Fee%20Structure%20%26%20Financial%20Engagement.png)
 
